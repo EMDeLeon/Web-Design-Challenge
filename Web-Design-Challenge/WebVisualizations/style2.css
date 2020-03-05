@@ -1,0 +1,98 @@
+/*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333;
+  background:rgb(241, 238, 238);
+}
+
+header {
+  background: #ffffff;;
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: rgb(107, 185, 185);
+  text-align: left;
+  font-weight: 800;
+}
+h2 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: rgb(107, 185, 185);
+  text-align: center;
+  font-weight: 600;
+  
+}
+
+
+/* Navigation Bars*/
+
+.navbar{
+  padding: 10px;
+  background-color: #eee;
+  margin-left: 775px;
+}
+
+.navbar li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;}
+
+.navbar li a{
+  color: black;
+  text-decoration: none;
+}
+/*Containers & Rows*/
+.box {
+  min-height: 500px;
+  padding: 20px;
+  margin: 10px;
+  font-weight: 100;
+  font-size: 18px;
+  color:rgb(99, 96, 96);
+  width: fit-content;
+}
+
+.white-background {
+  background: white;
+}
+
+/*Container Images*/
+
+/* Selecting elements by class */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Selecting elements by ID */
+#main-bio,
+#contact-info,
+#bio-image 
+
+
+
+#main-bio {
+  width: 100%;
+  position: relative;
+}
+
+#graph-image {
+  width: 100%;
+  position: relative;
+}
