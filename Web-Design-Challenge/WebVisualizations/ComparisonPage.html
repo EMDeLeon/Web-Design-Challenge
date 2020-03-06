@@ -12,28 +12,41 @@
 </head>
 <!--Navigation Buttons-->
 <body>
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="#">Plots</a>
-        </li>
-        <li>
-          <a href="#">Comparison</a>
-        </li>
-        <li>
-          <a href="#">Data</a>
-        </li>
-      </ul>
-    </nav>
-   
-  
+      <div class="navigation">
+	      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand"></a>
+            <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+                </button>
+​
+        <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" target ="_blank" href="VisualizationPage_Temp.html">Max Temperature</a>
+                            <a class="dropdown-item" target ="_blank" href="VisualizationPage_humidity.html">Humidity</a>
+                            <a class="dropdown-item" target ="_blank" href="VisualizationPage_Cloudy.html">Cloudiness</a>
+                            <a class="dropdown-item" target ="_blank" href="VisualizationPage_WindSpeed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="LandingPage.html"> Landing Page</a>
+                          </div>
+                        </li>
+                      <li class="nav-item">
+			                <a class="nav-link" href=ComparisonPage.html>Comparison</a>
+			                </li>
+                  <li class="nav-item">
+			          <a class="nav-link" href="data.html">Data</a>
+			        </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+   </body>
+  <br><br><br><br>
     <!--Headers-->
-
+<!--Containers and Pictures - making sure they are responsive to screen size-->
     <div class="container">
-      <!--Normally these medium columns go full wide on small screen sizes-->
-      <div class="row">
-        <div class="col-sm-12 col-lg-12">
           <div class="box white-background">
             <h1> Comparison:Latitude vs X </h1>
             <hr />
@@ -41,9 +54,8 @@
             <section id="main-bio">
               <section id="figure">
                 
-                <!--add a container with 6-->
-                <article>
-
+                <div class="row">
+                  <div class="col-sm-12 col-md-3 col-lg-6">
                   <h2> vs. Max Temperature </h1>
                   <a target="_blank" href="Fig1.png">
                     <img id="graph-image" src="Fig1.png" alt="Temperature Map">
@@ -53,6 +65,10 @@
                     <a target="_blank" href="Fig2.png">
                       <img id="graph-image" src="Fig2.png" alt="Humidity Map">
                     </a>
+                  </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-6">
                     <hr />
                     <h2> vs. Cloudiness </h1>
                       <a target="_blank" href="Fig3.png">
@@ -63,11 +79,12 @@
                         <a target="_blank" href="Fig4.png">
                           <img id="graph-image" src="Fig4.png" alt="WindSpeed Map">
                         </a>
-                  </article>
+                  </div>
+                  </div>
               </section>       
           </section>
-        </div></div>
-      </div>
+    </div>
+  </div>
     
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
